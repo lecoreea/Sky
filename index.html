@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky High Delivery Services</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
     <div class="container">
+        
+        <!-- Logo Section -->
         <div class="logo-container">
             <img class="resize" src="photo_2023-02-04_17-01-46.jpg" alt="Logo">
         </div>
 
+        <!-- Passcode Entry Section -->
         <div id="passcodeContainer">
             <h2>Enter Passcode</h2>
             <input type="password" id="passcode" placeholder="Enter the passcode" />
@@ -19,13 +22,16 @@
             <h3 id="message"></h3>
         </div>
 
+        <!-- Protected Content Section (Initially Hidden) -->
         <div id="protectedContent" style="display: none;">
             <h1>Chicagoland Based Vendor</h1>
             <p>We focus on quality products offered at a reasonable price. THCA product meeting all federal compliances. Est. 2020.</p>
-            <p>Welcome to my website! If I were to disappear from any app platform, this is a surefire way to never lose contact with me!
-                 <br>As of right now, my Telegram has been deleted, feel free to reach me on these alternate apps or by filling the form out below!</p>
+            <p>
+                Welcome to my website! If I were to disappear from any app platform, this is a surefire way to never lose contact with me!
+                <br>As of right now, my Telegram has been deleted, feel free to reach me on these alternate apps or by filling the form out below!
+            </p>
             
-            <!-- Updated PDF Menu Button -->
+            <!-- PDF Menu Button - Opens in a New Tab -->
             <h1><a href="menu.pdf" target="_blank"><u>Click here to see the current menu!</u></a></h1>
 
             <!-- Embedded PDF Viewer -->
@@ -33,6 +39,7 @@
                 <iframe src="menu.pdf" width="100%" height="600px"></iframe>
             </div>
             
+            <!-- Contact Information Section -->
             <section id="contact-section">
                 <table>
                     <tr>
@@ -49,21 +56,27 @@
                     </tr>
                 </table>
 
+                <!-- Contact Form Section -->
                 <h2>Fill this form out if there is another way you would like me to contact you</h2>
                 <form action="https://formspree.io/f/mvgonkdb" method="post" class="gform">
                     <label for="name">Your Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
                     <label for="contact">Your Contact Info:</label><br>
-                    <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required>
-                    <br> 
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required><br>
+
                     <label for="product">Desired Product:</label><br>
                     <input type="text" id="product" name="product" placeholder="Desired product?"><br>
+
                     <h3>Preferred Contact Time:</h3>
                     <label><input type="checkbox" name="contact_time" value="morning"><center>Morning</center> </label>
                     <label><input type="checkbox" name="contact_time" value="afternoon"><center>Afternoon</center> </label>
                     <br>
+
                     <label for="message">Customer Contact form:</label> <br>
                     <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+                    
+                    <!-- Form Submit & Reset Buttons -->
                     <div class="form-actions">
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
@@ -71,19 +84,7 @@
                 </form>
             </section>
 
-            <div class="product-selector">
-                <span class="arrow" id="leftArrow">⬅</span>
-                <div class="product-card" id="productCard">
-                    <img class="product-image" id="productImage" src="productone-image.jpg" alt="Product 1">
-                    <h3 id="productName">Product 1</h3>
-                    <p id="productDescription">Description of Product 1.</p>
-                    <p id="productPrice">$10.00</p>
-                </div>
-                <span class="arrow" id="rightArrow">➡</span>
-            </div>
-        </div>
-    </div>
-
+    <!-- External JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
