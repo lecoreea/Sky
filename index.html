@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky High Delivery Services</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img class="resize" src="photo_2023-02-04_17-01-46.jpg" alt="Logo">
+        </div>
+
+        <div id="passcodeContainer">
+            <h2>Enter Passcode</h2>
+            <input type="password" id="passcode" placeholder="Enter the passcode" />
+            <button id="submit">Submit</button>
+            <h3 id="message"></h3>
+        </div>
+
+        <div id="protectedContent" style="display: none;">
+            <h1>Chicagoland Based Vendor</h1>
+            <p>We focus on quality products offered at a reasonable price. THCA product meeting all federal compliances. Est. 2020.</p>
+            <p>Welcome to my website! If I were to disappear from any app platform, this is a surefire way to never lose contact with me!
+                 <br>As of right now, my Telegram has been deleted, feel free to reach me on these alternate apps or by filling the form out below!</p>
+            <h1><a href="https://doudlj.org/joinchat/ygDiPqcrhYLvZnxckqSLKA"><u>Click here to see the current menu!</u></a></h1>
+            
+            <section id="contact-section">
+                <table>
+                    <tr>
+                        <th>Contact Me on Signal:</th>
+                        <td><a href="https://signal.me/#eu/dgZY3BzVI1n4CdD2MMzdx1N51dH3PqwJyvTuka0sKVN_R6qgorVASaNiTEkZOtjV">SkyHighDelivers.11</a></td>
+                    </tr>
+        
+                    <tr>
+                        <th>Contact Me on Potato</th>
+                        <td><a href="https://doudlj.org/SkyHighDelivers">@SkyHighDelivers</a></td>
+                        
+                
+                    </tr>
+    
+                    <tr> <th>Contact Me on Snapchat</th>
+                        <td><a href="https://snapchat.com/t/mVMhXv1J">@SkyHighDeliver</a></td>
+                    </tr>
+                </table>
+                <h2>Fill this form out if there is another way you would like me to contact you</h2>
+                <form action="https://formspree.io/f/mvgonkdb" method="post" class="gform">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                    <label for="contact">Your Contact Info:</label><br>
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required>
+                   <br> <label for="product">Desired Product:</label><br>
+                    <input type="text" id="product" name="product" placeholder="Desired product?"><br>
+                    <h3>Preferred Contact Time:</h3>
+                    <label><input type="checkbox" name="contact_time" value="morning"><center>Morning</center> </label>
+                    <label><input type="checkbox" name="contact_time" value="afternoon"><center>Afternoon</center> </label>
+                    <br>
+                    <label for="message">Customer Contact form:</label> <br>
+                    <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+                    <div class="form-actions">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </section>
+            
+
+            <h3>Future idea being worked below, would you rather have this arrow option to swap thru products or it be presented as a list that you just croll down? Please let me know, you ultimately will be the users of the site. <br> I plan on introducing an upload image API at some point so i dont have to hard code every menu update so I can replace telegram and potato completely with this site. however some convenience of use things need to be implemented, I have to see if I need to code it or of if it can be done with an API that does not compromise on Opsec.</h3>
+            <div class="product-selector">
+                <span class="arrow" id="leftArrow">⬅</span>
+                <div class="product-card" id="productCard">
+                    <img class="product-image" class="productImage" src="productone-image.jpg" alt="Product 1">
+                    <h3 id="productName">Product 1</h3>
+                    <p id="productDescription">Description of Product 1.</p>
+                    <p id="productPrice">$10.00</p>
+                </div>
+                <span class="arrow" id="rightArrow">➡</span>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
